@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_write"
+    android:orientation="vertical" >
+
+    <!-- title -->
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/bind_new_phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/bind_new_phone_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/padding_36" />
+
+        <TextView
+            android:id="@+id/back_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/back_btn_margin_left"
+            android:gravity="center"
+            android:onClick="doBack"
+            android:text="@string/back_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/padding_30" />
+
+    </RelativeLayout>
+
+    <!-- content -->
+    <LinearLayout
+        android:id="@+id/view_content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar"
+        android:background="@color/lightgray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/single_container_height"
+            android:layout_marginTop="@dimen/padding_36"
+            android:layout_marginRight="@dimen/single_container_margin_right"
+            android:layout_marginLeft="@dimen/single_container_margin_left"
+            android:background="@color/white">
+	        <EditText
+	            android:id="@+id/new_phone_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_14"
+	            android:background="@color/white"
+	            android:hint="@string/new_phone_text_hint"
+	            android:inputType="phone"
+	            android:maxLength="11"
+	            android:textSize="@dimen/padding_30" >
+
+	            <requestFocus />
+	        </EditText>
+	        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <Button
+                    android:id="@+id/sms_code_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/padding_50"
+                    android:layout_marginRight="@dimen/padding_14"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/lightgray"
+                    android:onClick="doSendSMSCode"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingRight="@dimen/padding_10"
+                    android:text="@string/sms_code_btn"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/padding_30" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/single_container_height"
+            android:layout_marginTop="@dimen/padding_36"
+            android:layout_marginRight="@dimen/single_container_margin_right"
+            android:layout_marginLeft="@dimen/single_container_margin_left"
+            android:background="@color/white">
+
+	        <EditText
+	            android:id="@+id/sms_code_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_14"
+	            android:background="@color/white"
+	            android:hint="@string/sms_code_text_hint"
+	            android:inputType="number"
+	            android:maxLength="4"
+	            android:textSize="@dimen/padding_30" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_18"
+            android:layout_marginRight="@dimen/single_container_margin_right"
+            android:layout_marginLeft="@dimen/single_container_margin_left"
+            android:text="@string/bind_new_phone_view"
+            android:textColor="@color/sandybrown"
+            android:textSize="@dimen/padding_24" />
+
+        <Button
+            android:id="@+id/bind_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_btn_height"
+            android:layout_marginTop="@dimen/padding_54"
+            android:layout_marginRight="@dimen/bottom_btn_margin_right"
+            android:layout_marginLeft="@dimen/bottom_btn_margin_left"
+            android:background="@drawable/bottom_btn_shape"
+            android:onClick="doBind"
+            android:text="@string/bind_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/padding_36" />
+
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/view_loading_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/view_loading" />
+
+</RelativeLayout>

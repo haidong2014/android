@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_write"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/view_content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@color/lightgray"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/splash_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:drawablePadding="5sp"
+            android:drawableTop="@drawable/ic_120"
+            android:gravity="center"
+            android:text="@string/splash_label"
+            android:textColor="@color/skyblue"
+            android:textSize="@dimen/padding_50" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/splash_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp" />
+
+        <TextView
+            android:id="@+id/company_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="@string/company_label" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

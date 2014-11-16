@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="@color/lightskyblue">
+
+    <RelativeLayout
+        android:id="@+id/about_us_rel01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/about_us_title"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="@string/select_sex"
+            android:textColor="@color/lightskyblue"
+            android:textSize="22sp" />
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_us_rel01"
+        android:background="@color/white"
+        android:id="@+id/about_us_rel02"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_marginTop="2dp">
+
+        <ListView
+            android:id="@+id/alertdialog_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp">
+
+
+		</ListView>
+	</RelativeLayout>
+
+</RelativeLayout>

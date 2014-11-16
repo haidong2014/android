@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/mysql-connector-java-5.1.20-bin.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-beanutils-1.8.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-beanutils-core-1.8.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jackson-annotations-2.4.2-20140615.221559-1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jackson-core-2.4.2-20140615.222125-1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jackson-databind-2.4.2-20140618.223330-2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/transactions-api.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/transactions-jdbc.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/transactions-jta.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/transactions.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/aopalliance-alpha1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/aopalliance-1.0.0.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/jta-1_1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-aop-4.0.5.RELEASE.jar" sourcepath="WEB-INF/lib/spring-aop-4.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-beans-4.0.5.RELEASE.jar" sourcepath="WEB-INF/lib/spring-beans-4.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-context-4.0.5.RELEASE.jar" sourcepath="WEB-INF/lib/spring-context-4.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-context-support-4.0.5.RELEASE.jar" sourcepath="WEB-INF/lib/spring-context-support-4.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-core-4.0.5.RELEASE.jar" sourcepath="WEB-INF/lib/spring-core-4.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-expression-4.0.5.RELEASE.jar" sourcepath="WEB-INF/lib/spring-expression-4.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-jdbc-4.0.5.RELEASE.jar" sourcepath="WEB-INF/lib/spring-jdbc-4.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-orm-4.0.5.RELEASE.jar" sourcepath="WEB-INF/lib/spring-orm-4.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-tx-4.0.5.RELEASE.jar" sourcepath="WEB-INF/lib/spring-tx-4.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-web-4.0.5.RELEASE.jar" sourcepath="WEB-INF/lib/spring-web-4.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/spring-webmvc-4.0.5.RELEASE.jar" sourcepath="WEB-INF/lib/spring-webmvc-4.0.5.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/commons-httpclient-3.0-rc4.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>

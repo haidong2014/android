@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true">
+
+    <RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/list_item_bg"
+	    android:orientation="horizontal" >
+
+        <CheckBox
+	        android:id="@+id/member_cb"
+	        android:layout_width="@dimen/padding_70"
+	        android:layout_height="@dimen/padding_70"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:layout_margin="@dimen/padding_10"
+	        android:checked="true"
+	        android:visibility="gone"
+	        />
+        	    
+	    <ImageView
+	        android:id="@+id/member_image"
+	        android:layout_width="@dimen/padding_70"
+	        android:layout_height="@dimen/padding_70"
+	        android:layout_toRightOf="@id/member_cb"
+	        android:layout_centerVertical="true"
+	        android:layout_margin="@dimen/padding_10"
+	        android:contentDescription="@string/app_name"
+	        android:background="@drawable/iconfont_type_3_64"
+	        />
+	
+	    <TextView
+	        android:id="@+id/member_name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/member_image"
+	        android:ellipsize="end"
+	        android:gravity="center_vertical"
+	        android:layout_centerVertical="true"
+	        android:singleLine="true"
+	        android:textColor="@color/black"
+	        android:textSize="@dimen/comm_text_big" />
+	    
+	</RelativeLayout>
+	
+</RelativeLayout>

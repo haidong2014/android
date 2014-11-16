@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_write"
+    android:orientation="vertical" >
+
+    <!-- title -->
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/more_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/more_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/padding_36" />
+
+    </RelativeLayout>
+
+
+    <!-- content -->
+    <LinearLayout
+        android:id="@+id/view_content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar"
+        android:background="@color/lightgray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/user_set"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/user_set_container_height"
+            android:layout_marginTop="2dp"
+            android:onClick="doUserSet"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/user_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/more_margin_left"
+                android:gravity="center"
+                android:contentDescription="Portrait"
+                android:src="@drawable/iconfont_yonghu" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="user_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/padding_30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/notice_set"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:onClick="doNoticeSet"
+            android:background="@color/white">
+
+            <TextView
+	            android:id="@+id/notice_set_n"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="@dimen/more_margin_left"
+	            android:gravity="center"
+	            android:text="@string/notice_set"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/padding_30" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recommend_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:onClick="doRecommendFriend"
+            android:background="@color/white">
+
+			<TextView
+	            android:id="@+id/recommend_friend_n"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="@dimen/more_margin_left"
+	            android:gravity="center"
+	            android:text="@string/recommend_friend"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/padding_30" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:onClick="doFeedback"
+            android:background="@color/white">
+			<TextView
+	            android:id="@+id/feedback_n"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="@dimen/more_margin_left"
+	            android:gravity="center"
+	            android:text="@string/feedback"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/padding_30" />
+
+       	</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/about_us"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:onClick="doAboutUs"
+            android:background="@color/white">
+			<TextView
+	            android:id="@+id/about_us_n"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="@dimen/more_margin_left"
+	            android:gravity="center"
+	            android:text="@string/about_us"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/padding_30" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/clear_cache"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:onClick="doClearCache"
+            android:background="@color/white">
+			<TextView
+	            android:id="@+id/clear_cache_n"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="@dimen/more_margin_left"
+	            android:gravity="center"
+	            android:text="@string/clear_cache"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/padding_30" />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_btn_height"
+            android:layout_marginTop="@dimen/padding_54"
+            android:layout_marginRight="@dimen/bottom_btn_margin_right"
+            android:layout_marginLeft="@dimen/bottom_btn_margin_left"
+            android:background="@drawable/bottom_btn_shape"
+            android:onClick="doLogout"
+            android:text="@string/logout_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/padding_36" />
+
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/view_loading_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/view_loading" />
+
+</RelativeLayout>

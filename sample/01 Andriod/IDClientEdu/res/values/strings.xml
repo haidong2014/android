@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">益宝贝</string>
+    <string name="tab_1">tab_1</string>
+    <string name="tab_2">tab_2</string>
+    <string name="tab_3">tab_3</string>
+    <string name="tab_4">tab_4</string>
+    <string name="tip_loading">加载中&#8230;</string>
+    <string name="tip_load_fail">网络连接超时</string>
+    <string name="btn_reload">点击重试</string>
+    <string name="error_crash">程序异常，正在安全退出处理&#8230;</string>
+
+    <!-- splash -->
+    <string name="splash_label">益宝贝</string>
+    <string name="company_label">益德穿梭科技（大连）有限公司</string>
+
+    <!-- login -->
+    <string name="login_text">登录</string>
+    <string name="phone_label">手机号:</string>
+    <string name="phone_text_hint">请输入手机号</string>
+    <string name="pwd_label">密　码:</string>
+    <string name="pwd_text_hint">请输入密码</string>
+    <string name="forget_label">忘记密码</string>
+    <string name="login_btn">登录</string>
+    <string name="register_label">注册</string>
+    <string name="back_label">&lt;返回</string>
+    <string name="other_login_label">使用以下方式登录</string>
+    <string name="weibo_login_label">新浪微博</string>
+    <string name="qq_login_label">QQ</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <string name="weibosdk_demo_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
+    <string name="welcome_join_text">欢迎来到益宝贝</string>
+    <string name="dear_user">亲爱的{0}用户:</string>
+    <string name="welcome_join_exposition">若您是益宝贝新用户</string>
+    <string name="join_btn">{0}号直接进入</string>
+    <string name="welcome_join_exposition2">已经有益宝贝账号？</string>
+    <string name="bind_account">绑定益宝贝账号</string>
+
+    <!-- register -->
+    <string name="sms_code_label">验证码:</string>
+    <string name="sms_code_btn">获取验证码</string>
+    <string name="back_btn">返回</string>
+    <string name="next_btn">下一步</string>
+    <string name="register_msg">登陆和找回密码时，将使用此号码。</string>
+    <string name="sms_code_text_hint">请输入手机收到的验证码</string>
+    <string name="pwd_label2">密码:</string>
+    <string name="nickname_label">昵称:</string>
+    <string name="pwd_text_hint2">6&#8211;16位数字、字母和符号</string>
+    <string name="nickname_text_hint">请输入昵称</string>
+    <string name="submit_btn">提交</string>
+
+    <!-- forget -->
+    <string name="pwd_reset_label">找回密码</string>
+    <string name="pwd_text_hint3">新密码</string>
+    <string name="confirm_pwd_text_hint">确认新密码</string>
+    <string name="confirm_btn">确认</string>
+    <string name="pwd_view">密码长度至少6个字符，最多16个字符</string>
+
+    <!-- more -->
+    <string name="more_text">更多</string>
+    <string name="right_text">&gt;</string>
+    <string name="notice_set">消息提醒设置</string>
+    <string name="recommend_friend">推荐给朋友</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about_us">关于我们</string>
+    <string name="clear_cache">清空缓存</string>
+    <string name="logout_btn">退出登录</string>
+
+    <!-- my_account -->
+    <string name="my_account_text">我的账号</string>
+    <string name="portrait_label">头像</string>
+    <string name="nickname_view_label">昵称</string>
+    <string name="signature_view_label">个性签名</string>
+    <string name="signature_label">未填写</string>
+    <string name="sex_view_label">性别</string>
+    <string name="phone_view_label">手机号</string>
+    <string name="weibo_view_label">新浪微博</string>
+    <string name="qq_view_label">QQ</string>
+    <string name="password_modify_view">密码修改</string>
+    <string name="unbind">取消绑定</string>
+    <string name="bind">立即绑定</string>
+    <string name="select_sex">选择性别</string>
+    <!-- modify_nickname -->
+    <string name="modify_nickname_text">修改昵称</string>
+    <string name="save_btn">保存</string>
+    <string name="modify_sign_text">个性签名</string>
+    <string name="modify_password_text">修改密码</string>
+    <string name="old_pwd_text_hint">当前密码</string>
+    <!-- safety_verification -->
+    <string name="safety_verification_text">安全验证</string>
+    <string name="verification_phone_label">验证手机号:</string>
+    <string name="verification_btn">验证</string>
+    <string name="other_safety_verification">其他安全验证方式</string>
+    <!-- bind_new_phone -->
+    <string name="bind_new_phone_text">绑定新手机号</string>
+    <string name="new_phone_text_hint">请输入新手机号</string>
+    <string name="bind_new_phone_view">重新绑定后，之前绑定的手机号将不能作为登录凭证</string>
+    <string name="bind_btn">绑定</string>
+    <!-- verifiction_change -->
+    <string name="verifiction_change_text">选择验证方式</string>
+    <string name="bind_phone_verifiction_label">绑定的手机号</string>
+    <string name="phone_verifiction_label">手机验证</string>
+    <string name="immediately_verifiction_btn">立即验证</string>
+    <string name="bind_phone_verification_text">绑定的手机号</string>
+    <string name="bind_phone_text_hint">请输入你绑定的手机号</string>
+    <!-- verifiction_change -->
+    <string name="message_alert_text">消息提醒</string>
+    <string name="receive_alert_label">接收新消息通知</string>
+    <string name="receive_alert_on">关闭</string>
+    <string name="receive_alert_off">打开</string>
+    <!-- tab -->
+    <string name="tab_diary">日记</string>
+    <string name="tab_notice">消息</string>
+    <string name="tab_add">+</string>
+    <string name="tab_push">推荐</string>
+    <string name="tab_more">更多</string>
+    <string name="tab_calendar">日历</string>
+    <string name="tab_group">联系人</string>
+    <!-- btn -->
+    <string name="title_back">Back</string>
+    <string name="close_add">Close</string>
+    <!-- diary -->
+    <string name="diary_title_name">Monday</string>
+    <string name="diary_title_left">日历</string>
+    <string name="diary_title_right">MENU</string>
+    <string name="diary_detail_title_right_comment">评论</string>
+    <string name="diary_detail_title_right_edit">编辑</string>
+    <string name="diary_detail_title_name">日记详情</string>
+    <!-- common -->
+    <string name="comm_title_back">返回</string>
+    <string name="comm_title_add">添加</string>
+    <string name="comm_title_more">更多</string>
+    <string name="comm_footer_text">更多</string>
+    <string name="comm_head_tips_text">下拉刷新</string>
+    <string name="comm_head_tips_text_release">松开刷新</string>
+    <string name="comm_head_tips_text_doing">正在刷新&#8230;</string>
+    <string name="comm_head_last_updated">上次更新</string>
+    <string name="comm_footer_text_more_doing">加载更多中&#8230;</string>
+    <string name="comm_footer_text_more_auto_close">不自动获取</string>
+    <string name="comm_view_time_picker">选择时间</string>
+    <string name="comm_btn_ok">确认</string>
+    <string name="comm_btn_cancel">取消</string>
+    <string name="comm_btn_delete">删除</string>
+    <string name="comm_btn_edit">编辑</string>
+    <string name="comm_btn_send">发送</string>
+    <!-- notice -->
+    <string name="news_title_name">消息</string>
+    <string name="news_title_left">日历</string>
+    <string name="news_title_right">添加</string>
+    <string name="news_sys_msg">系统消息</string>
+    <string name="news_msg_title">消息通知</string>
+    <string name="news_detail_title_name">Group Name</string>
+    <string name="news_detail_btn_right_edit">编辑</string>
+    <string name="news_detail_btn_right_remaind">备忘</string>
+    <string name="news_add_title_name">添加通知</string>
+    <string name="news_edit_title_name">编辑通知</string>
+    <string name="news_edit_btn_save">保存</string>
+    <string name="news_add_btn_send">发送</string>
+    <string name="news_hint_type">主题</string>
+    <string name="news_hint_text">通知内容</string>
+    <string name="news_add_recipient">收件人</string>
+    <string name="news_add_recipient_self">私密</string>
+    <string name="news_add_send_to">收件人（%1$d）</string>
+    <string name="news_add_send_time">定时发送</string>
+    <string name="news_add_auto_send_time">直接发送</string>
+    <string name="news_add_reply">允许回复</string>
+    <string name="news_detail_reply">评论</string>
+    <string name="news_recipient_status">接收状态（%1$d/%2$d）</string>
+    <string name="news_set_remind">闹钟提醒</string>
+    <string name="news_set_top">置顶提醒</string>
+    <string name="news_get_sender">联系对方</string>
+    <string name="news_category">消息种类</string>
+    <string name="news_toast_newest">已为最新数据</string>
+    <string name="news_toast_nodata">无相关数据</string>
+    <string name="news_toast_data_time_check_fail">定时发送时间必须大于当前时间</string>
+    <!-- Dialog -->
+	<string name="delete_notice_msg">Are you sure you want to delete?</string>
+	<string name="delete_notice_yes">Yes</string>
+	<string name="delete_notice_no">No</string>
+
+    <!-- diary detail -->
+    <string name="hint_diary_detail_context_other">本日记图片册</string>
+    <string name="hint_diary_detail_context">记录内容</string>
+    <string name="hint_diary_detail_send_comment">评论</string>
+    <string name="comment_ok">评论成功</string>
+
+    <!-- add -->
+    <string name="hint_context">记录内容</string>
+    <string name="add_title_name">添加日记</string>
+    <string name="add_title_right">发表</string>
+    <string name="add_ok">发表成功</string>
+    <string name="add_fail">发表失败</string>
+
+    <!-- group -->
+    <string name="group_title_list">群列表</string>
+    <string name="group_add_title">添加群</string>
+    <string name="group_name">群名称</string>
+    
+    <!-- reply -->
+    <string name="reply_title_list">评论</string>
+    <string name="reply_add_title">添加评论</string>
+    <string name="reply_text">评论内容&#8230;</string>
+    
+    <!-- notice subject image -->
+    <string name="notice_subject_image_title">选择主题</string>
+    
+    <!-- recipient read  -->
+    <string name="recipient_read_title_list">接收状态</string>
+
+    <!-- member -->
+    <string name="member_title_list">成员列表</string>
+    <string name="member_bottom">全选</string>
+    <string name="member_title_right_btn">完成</string>
+    <string name="member_title_right_btn_add">邀请</string>
+    <string name="menber_get_fail_by_group_id">群信息不足，无法获取成员列表</string>
+    
+    <!-- alarm -->
+    <string name="alarm_time_picker_title">选择提醒时间</string>
+    <string name="alarm_title">提醒</string>
+    <string name="alarm_content">有一条消息提醒</string>
+    <string name="alarm_btn_ok">查看详情</string>
+    <string name="alarm_btn_cancel">关闭</string>
+    <string name="notice_toast_alarm_time_check_fail">消息提醒时间必须大于当前时间</string>
+    <string name="notice_set_alarm_success">消息提醒设置成功</string>
+    <string name="notice_set_alarm_cancel">取消提醒成功</string>
+    <string name="notice_toast_alarm_time">消息提醒时间为：%1$s</string>
+    <string name="alarm_cancel_title">提醒</string>
+    <string name="alarm_cancel_content">是否取消闹钟提醒</string>
+    
+    <!-- top -->
+    <string name="top_title">特别提醒</string>
+    <string name="top_toast_success">置顶设置成功</string>
+    <string name="top_toast_fail">置顶设置取消成功</string>
+
+</resources>

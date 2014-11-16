@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <bean id="loginService" class="com.infodeliver.webservice.login.service.impl.LoginService"/>
+    <bean id="captchaService" class="com.infodeliver.webservice.captcha.service.impl.CaptchaService"/>
+    <bean id="registerService" class="com.infodeliver.webservice.register.service.impl.RegisterService"/>
+    <bean id="noticeService" class="com.infodeliver.webservice.notice.service.impl.NoticeService"/>
+    <bean id="groupService" class="com.infodeliver.webservice.group.service.impl.GroupService"/>
+    <bean id="replyService" class="com.infodeliver.webservice.reply.service.impl.ReplyService"/>
+    <bean id="pushService" class="com.infodeliver.webservice.push.service.impl.PushService"/>
+    <bean id="calendarService" class="com.infodeliver.webservice.calendar.service.impl.CalendarService"/>
+    <bean id="logService" class="com.infodeliver.webservice.log.service.impl.LogService"/>
+    <bean id="userService" class="com.infodeliver.webservice.user.service.impl.UserService"/>
+    <bean id="recipientService" class="com.infodeliver.webservice.recipient.service.impl.RecipientService"/>
+</beans>

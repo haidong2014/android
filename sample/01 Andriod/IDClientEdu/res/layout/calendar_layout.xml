@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_write"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <LinearLayout
+        android:id="@+id/notify_main"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/notify_up_img"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical" >
+    
+	    <RelativeLayout
+	        android:id="@+id/title_bar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/title_height"
+	        android:background="@color/black" >
+	
+	        <Button
+	            android:id="@+id/title_left_btn"
+	            android:layout_width="@dimen/title_button_width"
+	            android:layout_height="fill_parent"
+	            android:layout_alignParentLeft="true"
+	            android:background="@color/gray"
+	            android:text="&lt;&lt;返回" />
+	        
+	    	<TextView
+	            android:id="@+id/title_name"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_toRightOf="@id/title_left_btn"
+	            android:gravity="center"
+	            android:text="日    ?     "
+	            android:textSize="24sp" />
+	        	        
+	
+	        <Button
+	            android:id="@+id/title_right_btn"
+	            android:layout_width="@dimen/title_button_width"
+	            android:layout_height="fill_parent"
+	            android:layout_alignParentRight="true"
+	            android:background="@color/gray" />
+	
+
+	        
+	    </RelativeLayout>
+
+    </LinearLayout>
+    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/week_title"
+	            android:orientation="vertical" >
+
+					<TextView
+					    android:id="@+id/textView1"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textSize="24sp" />
+	            	            
+	            <TextView
+	                android:id="@+id/calendarCenter"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentBottom="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_gravity="center_horizontal"
+	                android:layout_margin="8dp"
+	                android:layout_marginTop="dp"
+	                android:text="123" />
+
+
+
+	        </LinearLayout>
+
+	       <LinearLayout
+	           android:id="@+id/layout_calendar"
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:orientation="vertical" >
+	            
+				<com.infodeliver.client.ui.CalendarMoveView
+				    android:id="@+id/calendar"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content" />
+				
+			</LinearLayout>
+			
+	        	        
+	        <ListView
+	            android:id="@+id/listInfo"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_weight="1"
+	            android:background="@drawable/calc_back"
+	            android:dividerHeight="2dp" >
+
+	        </ListView>
+
+	    </LinearLayout>
+
+</LinearLayout>

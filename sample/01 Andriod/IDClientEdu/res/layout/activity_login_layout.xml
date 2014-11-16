@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	
+    <TextView 
+        android:id="@+id/login_text"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height_nomal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/login_text"
+        />
+    <Button 
+        android:id="@+id/login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height_nomal"
+        android:layout_alignParentBottom="true"
+        android:onClick="doLogin"
+        />
+</RelativeLayout>

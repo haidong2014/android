@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/black" >
+
+        <Button
+            android:id="@+id/title_left_btn"
+            android:layout_width="@dimen/title_button_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/gray"
+            android:onClick="doLeftClick" />
+
+        <Button
+            android:id="@+id/title_right_btn"
+            android:layout_width="@dimen/title_button_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/gray"
+            android:onClick="doRightClick" />
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/title_right_btn"
+            android:layout_toRightOf="@id/title_left_btn"
+            android:gravity="center"
+            android:text="@string/diary_title_name" />
+    </RelativeLayout>
+
+    <!-- content -->
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:layout_marginRight="@dimen/padding_20"
+        android:layout_marginTop="@dimen/padding_40" >
+
+        <TextView
+            android:id="@+id/diary_date"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/padding_40"
+            android:text="2014年7月9日" />
+
+        <TextView
+            android:id="@+id/content_other"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/diary_detail_context_other_height"
+            android:layout_below="@id/diary_date"
+            android:background="@color/color_test"
+            android:gravity="top|left"
+            android:hint="@string/hint_diary_detail_context_other" />
+        
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/diary_detail_context_height"
+            android:layout_below="@id/content_other"
+            android:background="@color/ivory"
+            android:gravity="top|left"
+            android:hint="@string/hint_diary_detail_context" />
+    </RelativeLayout>
+
+    <!-- send -->
+
+    <RelativeLayout
+        android:id="@+id/send_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/send_height"
+        android:layout_below="@id/content_layout"
+        android:layout_marginBottom="@dimen/padding_20"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:layout_marginRight="@dimen/padding_20"
+        android:background="@color/black" >
+
+        <ImageView
+            android:id="@+id/send_type_icon"
+            android:layout_width="@dimen/send_icon"
+            android:layout_height="@dimen/send_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:background="@drawable/composer_thought" />
+
+        <EditText 
+            android:id="@+id/send_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/send_type_icon"
+            android:hint="@string/hint_diary_detail_send_comment"
+            />
+    </RelativeLayout>
+
+    <!-- other -->
+
+    <RelativeLayout
+        android:id="@+id/send_other_type_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/send_other_type_height"
+        android:layout_below="@id/send_layout"
+        android:layout_marginLeft="@dimen/padding_20"
+        android:layout_marginRight="@dimen/padding_20"
+        android:background="@color/dimgray"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+</RelativeLayout>

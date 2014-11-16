@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/diary_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_write"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/title_left_btn"
+            android:layout_width="@dimen/title_button_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:onClick="doLeftClick"
+            android:text="@string/diary_title_left"
+            android:textColor="@color/white"
+             />
+
+        <TextView
+            android:id="@+id/title_right_btn"
+            android:layout_width="@dimen/title_button_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/diary_title_right"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/title_right_btn"
+            android:layout_toRightOf="@id/title_left_btn"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:text="@string/diary_title_name" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:orientation="vertical" >
+
+        <!-- 
+        <ListView
+            android:id="@+id/diary_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightyellow"
+            android:cacheColorHint="@color/white"
+            android:divider="@drawable/ic_divider"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+         -->
+        
+        <com.infodeliver.ui.NSPullDownView
+		    android:id="@+id/diary_pull_down_view"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:background="@android:color/white">
+		</com.infodeliver.ui.NSPullDownView>
+
+    </LinearLayout>
+    
+    <include
+            android:id="@+id/view_loading_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            layout="@layout/view_loading" />
+</RelativeLayout>

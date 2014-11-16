@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_write"
+    android:orientation="vertical" >
+
+    <!-- title -->
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/verifiction_change_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/verifiction_change_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/padding_36" />
+
+        <TextView
+            android:id="@+id/back_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/back_btn_margin_left"
+            android:gravity="center"
+            android:onClick="doBack"
+            android:text="@string/back_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/padding_30" />
+
+    </RelativeLayout>
+
+    <!-- content -->
+    <LinearLayout
+        android:id="@+id/view_content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar"
+        android:background="@color/lightgray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white">
+
+            <TextView
+	            android:id="@+id/bind_phone_verifiction_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="@dimen/more_margin_left"
+	            android:gravity="center"
+	            android:text="@string/bind_phone_verifiction_label"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/padding_30" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <Button
+		            android:id="@+id/bind_phone_verifiction_btn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="@dimen/padding_50"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+		            android:layout_marginRight="@dimen/more_margin_right"
+		            android:background="@color/mediumseagreen"
+		            android:onClick="doBindPhoneVerifiction"
+		            android:paddingLeft="@dimen/padding_10"
+		            android:paddingRight="@dimen/padding_10"
+		            android:text="@string/immediately_verifiction_btn"
+		            android:textColor="@color/white"
+		            android:textSize="@dimen/padding_30" />
+            </RelativeLayout>
+        </LinearLayout>
+
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/white">
+            <TextView
+	            android:id="@+id/phone_verifiction_label"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="@dimen/more_margin_left"
+	            android:gravity="center"
+	            android:text="@string/phone_verifiction_label"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/padding_30" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+                <Button
+		            android:id="@+id/phone_verifiction_btn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="@dimen/padding_50"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+		            android:layout_marginRight="@dimen/more_margin_right"
+		            android:background="@color/mediumseagreen"
+		            android:onClick="doPhoneVerifiction"
+		            android:paddingLeft="@dimen/padding_10"
+		            android:paddingRight="@dimen/padding_10"
+		            android:text="@string/immediately_verifiction_btn"
+		            android:textColor="@color/white"
+		            android:textSize="@dimen/padding_30" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/view_loading_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/view_loading" />
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- tab -->
+    <dimen name="tab_size">16dp</dimen>
+    <dimen name="cursor_height">5dp</dimen>
+
+    <!-- title -->
+    <dimen name="title_height">50dp</dimen>
+    <dimen name="title_button_width">60dp</dimen>
+
+    <!-- vine_json_layout -->
+    <dimen name="layout_padding">10dp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="vine_view_height">300dp</dimen>
+
+    <!-- diary -->
+    <dimen name="diary_layout_padding">20dp</dimen>
+    <dimen name="diary_item_height_normal">44dp</dimen>
+    <dimen name="diary_item_content_height">240dp</dimen>
+
+    <dimen name="diary_head_baby_image_wh">60dp</dimen>
+    <dimen name="diary_head_last_news_wh">80dp</dimen>
+    <dimen name="diary_head_tips_size">16sp</dimen>
+    <dimen name="diary_head_last_updated_size">10sp</dimen>
+
+    <!-- diary detail -->
+    <dimen name="diary_detail_context_other_height">120dp</dimen>
+    <dimen name="diary_detail_context_height">200dp</dimen>
+
+    <!-- add -->
+    <dimen name="send_height">44dp</dimen>
+    <dimen name="send_icon">30dp</dimen>
+    <dimen name="send_content_height">150dp</dimen>
+    <dimen name="send_other_type_height">80dp</dimen>
+
+    <!-- btn -->
+    <dimen name="btn_height_nomal">44dp</dimen>
+    <dimen name="btn_height_big">88dp</dimen>
+
+    <!-- guaid -->
+    <dimen name="padding_500">281dp</dimen>
+    <dimen name="padding_200">112dp</dimen>
+    <dimen name="padding_150">84dp</dimen>
+    <dimen name="padding_130">73dp</dimen>
+    <dimen name="padding_108">60dp</dimen>
+    <dimen name="padding_80">44dp</dimen>
+    <dimen name="padding_70">38dp</dimen>
+    <dimen name="padding_60">33dp</dimen>
+    <dimen name="padding_54">30dp</dimen>
+    <dimen name="padding_50">28dp</dimen>
+    <dimen name="padding_40">22dp</dimen>
+    <dimen name="padding_36">20dp</dimen>
+    <dimen name="padding_30">16dp</dimen>
+    <dimen name="padding_24">13dp</dimen>
+    <dimen name="padding_20">11dp</dimen>
+    <dimen name="padding_18">10dp</dimen>
+    <dimen name="padding_16">9dp</dimen>
+    <dimen name="padding_14">7dp</dimen>
+    <dimen name="padding_10">5dp</dimen>
+
+    <!-- tab bottom -->
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">5.0dip</dimen>
+    <dimen name="bottom_tab_font_size">10.0dip</dimen>
+
+    <!-- pull -->
+    <dimen name="pull_footer_text">16sp</dimen>
+    <dimen name="pull_head_height_normal">44dp</dimen>
+
+    <!-- message -->
+    <dimen name="message_memo_text_size">20sp</dimen>
+    <dimen name="message_detail_title_size">21sp</dimen>
+    <dimen name="message_detail_text_size">21sp</dimen>
+    <dimen name="message_detail_btn_size">16sp</dimen>
+
+    <!-- comm -->
+    <dimen name="comm_text_small">12sp</dimen>
+    <dimen name="comm_text_nomal">16sp</dimen>
+    <dimen name="comm_text_big">20sp</dimen>
+
+    <!-- login user more -->
+    <dimen name="back_btn_margin_left">15dp</dimen>
+    <dimen name="single_container_margin_left">15dp</dimen>
+    <dimen name="single_container_margin_right">15dp</dimen>
+    <dimen name="single_container_height">50dp</dimen>
+    <dimen name="bottom_btn_height">50dp</dimen>
+    <dimen name="bottom_btn_margin_left">15dp</dimen>
+    <dimen name="bottom_btn_margin_right">15dp</dimen>
+    <dimen name="user_set_container_height">120dp</dimen>
+    <dimen name="more_set_container_height">45dp</dimen>
+    <dimen name="more_margin_left">15dp</dimen>
+    <dimen name="more_margin_right">15dp</dimen>
+    <dimen name="sign_set_container_height">100dp</dimen>
+    <dimen name="wel_join_container_height">150dp</dimen>
+
+
+</resources>

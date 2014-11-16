@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_write"
+    android:orientation="vertical" >
+
+    <!-- title -->
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/welcome_join_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/welcome_join_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/padding_36" />
+
+        <TextView
+            android:id="@+id/back_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/back_btn_margin_left"
+            android:gravity="center"
+            android:onClick="doBack"
+            android:text="@string/back_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/padding_30" />
+
+    </RelativeLayout>
+
+    <!-- content -->
+    <LinearLayout
+        android:id="@+id/view_content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar"
+        android:background="@color/lightgray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/wel_join_container_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/padding_30"
+	            android:background="@color/white">
+
+	            <TextView
+		            android:id="@+id/dear_user"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="@dimen/more_margin_left"
+		            android:gravity="center"
+		            android:text="@string/dear_user"
+		            android:textColor="@color/black"
+		            android:textSize="@dimen/padding_30" />
+
+	            <TextView
+		            android:id="@+id/nickname"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:text="TextView"
+		            android:textColor="@color/orange"
+		            android:textSize="@dimen/padding_30" />
+	        </LinearLayout>
+
+	        <TextView
+	            android:id="@+id/welcome_join_exposition"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="@dimen/padding_24"
+	            android:layout_marginLeft="@dimen/more_margin_left"
+	            android:text="@string/welcome_join_exposition"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/padding_30" />
+
+
+	        <Button
+	            android:id="@+id/join_btn"
+	            android:layout_width="fill_parent"
+	            android:layout_height="@dimen/bottom_btn_height"
+	            android:layout_marginTop="@dimen/padding_24"
+	            android:layout_marginRight="@dimen/bottom_btn_margin_right"
+            	android:layout_marginLeft="@dimen/bottom_btn_margin_left"
+	            android:background="@drawable/bottom_btn_shape"
+	            android:onClick="doLogout"
+	            android:text="@string/join_btn"
+	            android:textColor="@color/white"
+	            android:textSize="@dimen/padding_36" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/welcome_join_exposition2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/padding_30"
+            android:gravity="center"
+            android:text="@string/welcome_join_exposition2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/padding_30" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/single_container_height"
+            android:layout_marginTop="@dimen/padding_18"
+            android:background="@color/white">
+
+	        <TextView
+	            android:id="@+id/bind_account"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="@dimen/more_margin_left"
+	            android:gravity="center"
+	            android:text="@string/bind_account"
+	            android:textColor="@color/black"
+	            android:textSize="@dimen/padding_30" />
+	        <Button
+	            android:id="@+id/bind_account_btn"
+	            android:layout_width="wrap_content"
+	            android:layout_height="@dimen/padding_50"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="@dimen/more_margin_right"
+	            android:background="@color/mediumseagreen"
+	            android:paddingLeft="@dimen/padding_10"
+	            android:paddingRight="@dimen/padding_10"
+	            android:textColor="@color/white"
+	            android:text="@string/bind"
+	            android:onClick="bindAccount"
+	            android:textSize="@dimen/padding_30" />
+
+		</RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/view_loading_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/view_loading" />
+
+</RelativeLayout>

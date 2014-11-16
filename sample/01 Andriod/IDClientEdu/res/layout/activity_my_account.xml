@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent_write"
+    android:orientation="vertical" >
+
+    <!-- title -->
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/my_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/my_account_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/padding_36" />
+
+        <TextView
+            android:id="@+id/back_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/back_btn_margin_left"
+            android:gravity="center"
+            android:onClick="doBack"
+            android:text="@string/back_label"
+            android:textColor="@color/black"
+            android:textSize="@dimen/padding_30" />
+
+    </RelativeLayout>
+
+    <!-- content -->
+    <LinearLayout
+        android:id="@+id/view_content_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar"
+        android:background="@color/lightgray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/portrait"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/user_set_container_height"
+            android:layout_marginTop="2dp"
+            android:onClick="setPortrait"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/portrait_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/more_margin_left"
+                android:gravity="center"
+                android:text="@string/portrait_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/padding_30" />
+
+            <ImageView
+                android:id="@+id/user_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/more_margin_right"
+                android:contentDescription="Portrait"
+                android:gravity="center"
+                android:src="@drawable/iconfont_yonghu" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nickname_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:onClick="setNickname"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/nickname_view_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/more_margin_left"
+                android:gravity="center"
+                android:text="@string/nickname_view_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/padding_30" />
+
+            <TextView
+                android:id="@+id/nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/more_margin_right"
+                android:gravity="center"
+                android:text="user_name"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/padding_24" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sex_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:onClick="setSex"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/sex_view_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/more_margin_left"
+                android:gravity="center"
+                android:text="@string/sex_view_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/padding_30" />
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/more_margin_right"
+                android:gravity="center"
+                android:text="sex"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/padding_24" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/signature_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:onClick="setSignature"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/signature_view_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/more_margin_left"
+                android:gravity="center"
+                android:text="@string/signature_view_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/padding_30" />
+
+            <TextView
+                android:id="@+id/signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="@dimen/more_margin_right"
+                android:gravity="right"
+                android:text="@string/signature_label"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/padding_24" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/phone_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:onClick="setPhone"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/phone_view_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/more_margin_left"
+                android:gravity="center"
+                android:text="@string/phone_view_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/padding_30" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/more_margin_right"
+                android:gravity="center"
+                android:text="phone"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/padding_24" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/weibo_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/weibo_view_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/more_margin_left"
+                android:gravity="center"
+                android:text="@string/weibo_view_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/padding_30" />
+
+            <Button
+                android:id="@+id/weibo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/padding_50"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/more_margin_right"
+                android:background="@color/mediumseagreen"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:textColor="@color/white"
+                android:text="@string/bind"
+                android:onClick="setWeibo"
+                android:textSize="@dimen/padding_30" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/qq_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/qq_view_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/more_margin_left"
+                android:gravity="center"
+                android:text="@string/qq_view_label"
+                android:textColor="@color/black"
+                android:textSize="@dimen/padding_30" />
+            <Button
+                android:id="@+id/qq_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/padding_50"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/more_margin_right"
+                android:background="@color/mediumseagreen"
+                android:paddingLeft="@dimen/padding_10"
+                android:paddingRight="@dimen/padding_10"
+                android:textColor="@color/white"
+                android:text="@string/bind"
+                android:textSize="@dimen/padding_30" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/password_modify_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/more_set_container_height"
+            android:layout_marginTop="1dp"
+            android:onClick="setPasswordModify"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/password_modify_view_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/more_margin_left"
+                android:gravity="center"
+                android:text="@string/password_modify_view"
+                android:textColor="@color/black"
+                android:textSize="@dimen/padding_30" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/view_loading_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        layout="@layout/view_loading" />
+
+</RelativeLayout>

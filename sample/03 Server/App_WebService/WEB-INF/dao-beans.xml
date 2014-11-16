@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+    <bean id="loginDao" class="com.infodeliver.webservice.login.dao.impl.LoginDao">
+        <property name="dataSource" ref="masterDS" />
+    </bean>
+
+    <bean id="captchaDao" class="com.infodeliver.webservice.captcha.dao.impl.CaptchaDao">
+        <property name="dataSource" ref="masterDS" />
+    </bean>
+
+    <bean id="registerDao" class="com.infodeliver.webservice.register.dao.impl.RegisterDao">
+        <property name="dataSource" ref="masterDS" />
+    </bean>
+
+    <bean id="noticeDao" class="com.infodeliver.webservice.notice.dao.impl.NoticeDao">
+        <property name="dataSource" ref="masterDS" />
+    </bean>
+    
+    <bean id="groupDao" class="com.infodeliver.webservice.group.dao.impl.GroupDao">
+        <property name="dataSource" ref="masterDS" />
+    </bean>
+    
+    <bean id="replyDao" class="com.infodeliver.webservice.reply.dao.impl.ReplyDao">
+        <property name="dataSource" ref="masterDS" />
+    </bean>
+
+    <bean id="pushDao" class="com.infodeliver.webservice.push.dao.impl.PushDao">
+        <property name="dataSource" ref="masterDS" />
+    </bean>
+
+    <bean id="calendarDao" class="com.infodeliver.webservice.calendar.dao.impl.CalendarDao">
+        <property name="dataSource" ref="masterDS" />
+    </bean>
+
+    <bean id="logDao" class="com.infodeliver.webservice.log.dao.impl.LogDao">
+        <property name="dataSource" ref="masterDS" />
+    </bean>
+
+    <bean id="userDao" class="com.infodeliver.webservice.user.dao.impl.UserDao">
+        <property name="dataSource" ref="masterDS" />
+    </bean>
+
+    <bean id="recipientDao" class="com.infodeliver.webservice.recipient.dao.impl.RecipientDao">
+        <property name="dataSource" ref="masterDS" />
+    </bean>
+</beans>
